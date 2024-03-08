@@ -8,20 +8,17 @@ pipeline {
                 sh 'g++ main.cpp -o output'
             }
           
-            
         }
         stage('Test') {
             steps {
                 
                 sh './output'
             }
-            
         }
         stage('Deploy') {
             steps {
-                echo 'deploy'
+               sh 'g++ main.cpp -o ou
             }
-          
             }
     }
 
